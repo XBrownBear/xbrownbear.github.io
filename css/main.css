@@ -399,8 +399,8 @@ td {
 }
 pre,
 .highlight {
-  background: #f7f7f7;
-  color: #4d4d4c;
+  background: #2d2d2d;
+  color: #ccc;
   line-height: 1.6;
   margin: 0 auto 20px;
 }
@@ -422,13 +422,13 @@ pre {
 }
 pre code {
   background: none;
-  color: #4d4d4c;
+  color: #ccc;
   font-size: 0.875em;
   padding: 0;
   text-shadow: none;
 }
 .highlight *::selection {
-  background: #d6d6d6;
+  background: #515151;
 }
 .highlight pre {
   border: 0;
@@ -446,7 +446,7 @@ pre code {
 }
 .highlight figcaption {
   background: #eee;
-  color: #4d4d4c;
+  color: #ccc;
   line-height: 1em;
   margin: 0;
   padding: 0.5em;
@@ -460,21 +460,21 @@ pre code {
   clear: both;
 }
 .highlight figcaption a {
-  color: #4d4d4c;
+  color: #ccc;
   float: right;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: #ccc;
 }
 .highlight .gutter pre {
-  background: #eff2f3;
-  color: #869194;
+  background: #1b1b1b;
+  color: #999;
   padding-left: 10px;
   padding-right: 10px;
   text-align: right;
 }
 .highlight .code pre {
-  background: #f7f7f7;
+  background: #2d2d2d;
   padding-left: 10px;
   width: 100%;
 }
@@ -491,20 +491,20 @@ pre code {
   border: 0;
 }
 pre .deletion {
-  background: #fdd;
+  background: #800000;
 }
 pre .addition {
-  background: #dfd;
+  background: #008000;
 }
 pre .meta {
-  color: #eab700;
+  color: #fc6;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 pre .comment {
-  color: #8e908c;
+  color: #999;
 }
 pre .variable,
 pre .attribute,
@@ -519,7 +519,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #f2777a;
 }
 pre .number,
 pre .preprocessor,
@@ -529,7 +529,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #f99157;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -542,11 +542,11 @@ pre .ruby .symbol,
 pre .xml .cdata,
 pre .special,
 pre .formula {
-  color: #718c00;
+  color: #9c9;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #6cc;
 }
 pre .function,
 pre .python .decorator,
@@ -556,11 +556,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #69c;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #c9c;
 }
 .blockquote-center {
   border-left: none;
@@ -1186,7 +1186,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff93ff;
+  background: #daffde;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2856,4 +2856,118 @@ ul.breadcrumb li + li:last-child {
   height: auto;
   width: auto;
   z-index: -2;
+}
+.content {
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(255,255,255,0.1) none repeat scroll !important;
+}
+a,
+span.exturl {
+  border-bottom: none;
+}
+.post-block,
+.post-block + .post-block {
+  background: #3f3f3f;
+  border-radius: 20px;
+  box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
+}
+body {
+  color: #999;
+}
+.posts-expand .post-title-link {
+  color: #fff;
+}
+.posts-expand .post-title-link::before {
+  background: #fff;
+}
+.posts-expand .post-meta {
+  color: #888;
+}
+a,
+span.exturl {
+  color: #c5c5c5;
+}
+a:hover,
+span.exturl:hover {
+  color: #fff;
+}
+.header-inner,
+.sidebar-inner,
+.sidebar {
+  background: #3f3f3f;
+}
+.menu-item-active a,
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover {
+  background: #555;
+}
+blockquote {
+  background: rgba(153,153,153,0.2);
+  border: 1px dashed rgba(0,0,0,0.2);
+  border-left: 4px solid rgba(20,225,225,0.639);
+  color: #c5c5c5;
+}
+.site-description {
+  color: #c5c5c5;
+}
+.site-state-item a,
+.links-of-blogroll-item a {
+  color: #999;
+}
+.site-state-item a:hover,
+.links-of-blogroll-item a:hover {
+  color: #fff;
+}
+.links-of-blogroll-title {
+  color: #bbb;
+  font-size: 0.875em;
+}
+.links-of-author-item a {
+  color: #999;
+}
+.site-author-name {
+  color: #4bec0e;
+}
+.sidebar-nav li {
+  color: #bbb;
+}
+.post-toc ol a {
+  color: #888;
+}
+.post-toc ol a:hover {
+  color: #fff;
+}
+.my_post_copyright {
+  box-shadow: 4px 4px 18px rgba(0,0,0,0.46);
+  border-radius: 6px;
+  border: none;
+  background: none;
+}
+.my_post_copyright a {
+  color: #5797ec;
+}
+.post-nav-item a {
+  color: #999;
+}
+.post-nav-item a:hover {
+  color: #fff;
+}
+.comments {
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(34,34,34,0.612) none repeat scroll !important;
+}
+.v .vlist .vcard .vhead .vsys {
+  background: #222 !important;
+  color: #ce7b7b !important;
+}
+.v .vinput {
+  color: #20f417;
+}
+.v .vwrap .vedit .vctrl span {
+  color: #f60;
+}
+.v .vlist .vcard .vcontent p {
+  color: #53f814;
 }
