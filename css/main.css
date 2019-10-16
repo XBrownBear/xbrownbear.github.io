@@ -1186,7 +1186,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffe441;
+  background: #c6dd16;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2970,4 +2970,12 @@ blockquote {
 }
 .v .vlist .vcard .vcontent p {
   color: #53f814;
+}
+.posts-collapse .post-title a,
+.posts-collapse .post-title span.exturl {
+  color: #c5c5c5;
+}
+.posts-collapse .post-title a:hover,
+.posts-collapse .post-title span.exturl:hover {
+  color: #ddd;
 }
