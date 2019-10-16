@@ -15,7 +15,7 @@
   <entry>
     <title>数据库常用函数</title>
     <url>/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0.html</url>
-    <content><![CDATA[<h1 id="前序："><a href="#前序：" class="headerlink" title="前序："></a>前序：</h1><p>增删改查简称CRUD<br>数据定义语言（DDL）：create、drop、alter、show<br>数据操纵语言（DML）：insert、delete、update<br>数据查询语言（DQL）：select<br>数据控制语言（DCL）：grant（分配）、revoke（回收）、deny（拒绝）等</p>
+    <content><![CDATA[<h1 id="前序："><a href="#前序：" class="headerlink" title="前序："></a>前序：</h1><p>增删改查简称CRUD<br>数据定义语言（DDL）：create、drop、alter、show<br>数据操纵语言（DML）：insert、delete、update<br>数据查询语言（DQL）：select<br>数据控制语言（DCL）：grant（分配）、revoke（回收）、deny（拒绝）等。<a id="more"></a></p>
 <h2 id="数据类型："><a href="#数据类型：" class="headerlink" title="数据类型："></a>数据类型：</h2><ul>
 <li>整数：tingint（1字节）、smallint（2字节）、int（4字节）、bigint（8字节）</li>
 <li>定点数：decimal（p,s）（字节数为 p+2）</li>
