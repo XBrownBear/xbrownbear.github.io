@@ -70,16 +70,34 @@
   };
 </script>
 
-  <meta name="description" content="创建表：create table 表名（）创建表中字段的属性（都是写在 “字段名 类型 是否空” 后面）：    引用其他表字段：references 引用的表名（字段）    设置字段中默认值：defauct ‘’    自增列：auto_increment    约束字段（域）：check（）    主键：primart key查看表的基本结构：">
+  <meta name="description" content="创建表create table 表名()
+创建表中字段的属性（都是写在 字段名 类型 是否空后面）：
+
+引用其他表字段：references 引用的表名（字段）
+设置字段中默认值：defauct ‘’
+自增列：auto_increment
+约束字段（域）：check()">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据定义语言DDL">
 <meta property="og:url" content="http://github.com/xbrownbear/数据定义语言DDL.html">
 <meta property="og:site_name" content="一只不掉毛的程序猿">
-<meta property="og:description" content="创建表：create table 表名（）创建表中字段的属性（都是写在 “字段名 类型 是否空” 后面）：    引用其他表字段：references 引用的表名（字段）    设置字段中默认值：defauct ‘’    自增列：auto_increment    约束字段（域）：check（）    主键：primart key查看表的基本结构：">
-<meta property="og:updated_time" content="2019-10-16T12:41:27.012Z">
+<meta property="og:description" content="创建表create table 表名()
+创建表中字段的属性（都是写在 字段名 类型 是否空后面）：
+
+引用其他表字段：references 引用的表名（字段）
+设置字段中默认值：defauct ‘’
+自增列：auto_increment
+约束字段（域）：check()">
+<meta property="og:updated_time" content="2019-10-17T08:00:19.370Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据定义语言DDL">
-<meta name="twitter:description" content="创建表：create table 表名（）创建表中字段的属性（都是写在 “字段名 类型 是否空” 后面）：    引用其他表字段：references 引用的表名（字段）    设置字段中默认值：defauct ‘’    自增列：auto_increment    约束字段（域）：check（）    主键：primart key查看表的基本结构：">
+<meta name="twitter:description" content="创建表create table 表名()
+创建表中字段的属性（都是写在 字段名 类型 是否空后面）：
+
+引用其他表字段：references 引用的表名（字段）
+设置字段中默认值：defauct ‘’
+自增列：auto_increment
+约束字段（域）：check()">
   <link rel="canonical" href="http://github.com/xbrownbear/数据定义语言DDL">
 
 
@@ -354,11 +372,19 @@
                 
               
 
-              <time title="创建时间：2019-10-16 20:33:19 / 修改时间：20:41:27" itemprop="dateCreated datePublished" datetime="2019-10-16T20:33:19+08:00">2019-10-16</time>
+              <time title="创建时间：2019-10-16 20:33:19" itemprop="dateCreated datePublished" datetime="2019-10-16T20:33:19+08:00">2019-10-16</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-17 16:00:19" itemprop="dateModified" datetime="2019-10-17T16:00:19+08:00">2019-10-17</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -412,7 +438,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>845</span>
+              <span>850</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -435,7 +461,56 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>创建表：create table 表名（）<br>创建表中字段的属性（都是写在 “字段名 类型 是否空” 后面）：<br>    引用其他表字段：references 引用的表名（字段）<br>    设置字段中默认值：defauct ‘’<br>    自增列：<code>auto_increment</code><br>    约束字段（域）：check（）<br>    主键：primart key<br>查看表的基本结构：<a id="more"></a><br>    语法：desc 表名<br>    结果：    Field：字段名<br>        Type：字段类型<br>        NULL：是否可以为空<br>        Key：是否编制索引<br>        Default：默认值<br>        Extra：附加信息，如自增列（自动增长列一般为主键）<br>查看表的详细结构：<br>    查看：show create table 表名<br>    格式化：show create table 表名\G<br>修改表名：alter table 旧表名 rename to 新表名<br>修改字段名：    alter table 表名 change 旧字段名 新字段名 新类型<br>修改字段数据类型：alter table 表名 modify 字段名 新类型<br>添加和删除字段：<br>    添加：    alter table 表名 add 新字段 新类型<br>    删除：    alter table 表名 drop 字段<br>增补约束：<br>    添加主键：    alter table 表名<br>            add constraint 约束的名称    //约束名称一般为，PK<em>表名</em>主键字段<br>            primary key（主键目标列）<br>    添加外键约束：    alter table 表名<br>            add constraint 约束的名称    //约束名称一般为，FK<em>引用表</em>被引用表<br>            foreign key（列）references 被引用表（列）<br>    添加检查约束：    alter table 表名<br>            add constraint 约束的名称    //约束名称一般为，CK_表名<br>            check（约束条件）<br>    添加默认值语法：<br>            alter table 表名 alter 目标列 set default 默认值<br>    添加自动增长语法：<br>            alter table 表名 modify column 自增列 类型 是否为空 auto_increment<br>删除无关联数据表：<br>    drop table 表1，表2；（可删多个，注意：无关联）<br>删除有关联数据表：<br>    先解除关联关系（删除外键约束）：alter table 从表名称 drop 外键约束 名称</p>
+        <h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><p><code>create table 表名()</code></p>
+<h3 id="创建表中字段的属性"><a href="#创建表中字段的属性" class="headerlink" title="创建表中字段的属性"></a>创建表中字段的属性</h3><p>（都是写在 <code>字段名 类型 是否空</code>后面）：</p>
+<ul>
+<li>引用其他表字段：<code>references 引用的表名（字段）</code></li>
+<li>设置字段中默认值：<code>defauct ‘’</code></li>
+<li>自增列：<code>auto_increment</code></li>
+<li>约束字段（域）：<code>check()</code><a id="more"></a></li>
+<li>主键：<code>primart key</code></li>
+</ul>
+<h3 id="查看表的基本结构"><a href="#查看表的基本结构" class="headerlink" title="查看表的基本结构"></a>查看表的基本结构</h3><ul>
+<li>语法：<code>desc 表名</code></li>
+<li>结果：</li>
+</ul>
+<p><code>Field</code>：字段名</p>
+<p><code>Type</code>：字段类型</p>
+<p><code>NULL</code>：是否可以为空</p>
+<p><code>Key</code>：是否编制索引</p>
+<p><code>Default</code>：默认值</p>
+<p><code>Extra</code>：附加信息，如自增列（自动增长列一般为主键）</p>
+<h3 id="查看表的详细结构"><a href="#查看表的详细结构" class="headerlink" title="查看表的详细结构"></a>查看表的详细结构</h3><ul>
+<li>查看：<code>show create table 表名</code></li>
+<li>格式化：<code>show create table 表名\G</code></li>
+</ul>
+<h3 id="修改表名"><a href="#修改表名" class="headerlink" title="修改表名"></a>修改表名</h3><p><code>alter table 旧表名 rename to 新表名</code></p>
+<h3 id="修改字段名"><a href="#修改字段名" class="headerlink" title="修改字段名"></a>修改字段名</h3><p><code>alter table 表名 change 旧字段名 新字段名 新类型</code></p>
+<h3 id="修改字段数据类型"><a href="#修改字段数据类型" class="headerlink" title="修改字段数据类型"></a>修改字段数据类型</h3><p><code>alter table 表名 modify 字段名 新类型</code></p>
+<h3 id="添加和删除字段"><a href="#添加和删除字段" class="headerlink" title="添加和删除字段"></a>添加和删除字段</h3><ul>
+<li>添加：    <code>alter table 表名 add 新字段 新类型</code></li>
+<li>删除：    <code>alter table 表名 drop 字段</code></li>
+</ul>
+<h3 id="增补约束"><a href="#增补约束" class="headerlink" title="增补约束"></a>增补约束</h3><ul>
+<li>添加主键：    </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">alter table 表名</div><div class="line">add constraint 约束的名称             //约束名称一般为，PK_表名_主键字段</div><div class="line">primary key(主键目标列)</div></pre></td></tr></table></figure>
+<ul>
+<li>添加外键约束：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">alter table 表名</div><div class="line">add constraint 约束的名称//约束名称一般为，FK_引用表_被引用表</div><div class="line">foreign key(列) references 被引用表（列）</div></pre></td></tr></table></figure>
+<ul>
+<li>添加检查约束：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">alter table 表名</div><div class="line">add constraint 约束的名称//约束名称一般为，CK_表名</div><div class="line">check(约束条件)</div></pre></td></tr></table></figure>
+<ul>
+<li>添加默认值语法：<pre><code>`alter table 表名 alter 目标列 set default 默认值`
+</code></pre></li>
+<li>添加自动增长语法：<pre><code>`alter table 表名 modify column 自增列 类型 是否为空 auto_increment`
+</code></pre></li>
+</ul>
+<h3 id="删除无关联数据表"><a href="#删除无关联数据表" class="headerlink" title="删除无关联数据表"></a>删除无关联数据表</h3><p><code>drop table 表1，表2</code>；（可删多个，注意：无关联）</p>
+<h3 id="删除有关联数据表"><a href="#删除有关联数据表" class="headerlink" title="删除有关联数据表"></a>删除有关联数据表</h3><p>先解除关联关系（删除外键约束）：<code>alter table 从表名称 drop 外键约束 名称</code></p>
 
     </div>
 
@@ -463,7 +538,7 @@
   <p><span>本文标题:</span><a href="/数据定义语言DDL.html">数据定义语言DDL</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Mr.xiong 的个人博客">Mr.xiong</a></p>
   <p><span>发布时间:</span>2019年10月16日 - 20:10</p>
-  <p><span>最后更新:</span>2019年10月16日 - 20:10</p>
+  <p><span>最后更新:</span>2019年10月17日 - 16:10</p>
   <p><span>原始链接:</span><a href="/数据定义语言DDL.html" title="数据定义语言DDL">http://github.com/xbrownbear/数据定义语言DDL.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://github.com/xbrownbear/数据定义语言DDL.html"  aria-label="复制成功！"></i></span>
   </p>
@@ -584,6 +659,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建表"><span class="nav-text">创建表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建表中字段的属性"><span class="nav-text">创建表中字段的属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看表的基本结构"><span class="nav-text">查看表的基本结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看表的详细结构"><span class="nav-text">查看表的详细结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改表名"><span class="nav-text">修改表名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改字段名"><span class="nav-text">修改字段名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改字段数据类型"><span class="nav-text">修改字段数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加和删除字段"><span class="nav-text">添加和删除字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增补约束"><span class="nav-text">增补约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除无关联数据表"><span class="nav-text">删除无关联数据表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除有关联数据表"><span class="nav-text">删除有关联数据表</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
