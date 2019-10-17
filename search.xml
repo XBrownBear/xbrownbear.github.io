@@ -46,8 +46,8 @@
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">alter table 表名</div><div class="line">add constraint 约束的名称//约束名称一般为，CK_表名</div><div class="line">check(约束条件)</div></pre></td></tr></table></figure>
 <ul>
-<li>添加默认值语法：<br><kbd>alter table 表名 alter 目标列 set default 默认值</kbd></li>
-<li>添加自动增长语法：<br><kbd>alter table 表名 modify column 自增列 类型 是否为空 auto_increment</kbd></li>
+<li>添加默认值语法：<br><code>alter table 表名 alter 目标列 set default 默认值</code></li>
+<li>添加自动增长语法：<br><code>alter table 表名 modify column 自增列 类型 是否为空 auto_increment</code></li>
 </ul>
 <h3 id="删除无关联数据表"><a href="#删除无关联数据表" class="headerlink" title="删除无关联数据表"></a>删除无关联数据表</h3><p><code>drop table 表1，表2</code>；（可删多个，注意：无关联）</p>
 <h3 id="删除有关联数据表"><a href="#删除有关联数据表" class="headerlink" title="删除有关联数据表"></a>删除有关联数据表</h3><p>先解除关联关系（删除外键约束）：<code>alter table 从表名称 drop 外键约束 名称</code></p>
