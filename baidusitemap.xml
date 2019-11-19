@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.xiongchang.vip/%E3%80%8ASpringBoot%E5%AE%9E%E6%88%98%E3%80%8B.html</loc>
+    <lastmod>2019-11-19</lastmod>
+  </url>  <url>
     <loc>http://blog.xiongchang.vip/CSS3%E5%B8%B8%E7%94%A8%E5%B1%9E%E6%80%A7.html</loc>
     <lastmod>2019-11-16</lastmod>
   </url>  <url>
@@ -24,9 +27,6 @@
   </url>  <url>
     <loc>http://blog.xiongchang.vip/%E5%95%8A%E5%93%88%EF%BC%81%E7%AE%97%E6%B3%95.html</loc>
     <lastmod>2019-11-15</lastmod>
-  </url>  <url>
-    <loc>http://blog.xiongchang.vip/%E3%80%8ASpringBoot%E5%AE%9E%E6%88%98%E3%80%8B.html</loc>
-    <lastmod>2019-11-11</lastmod>
   </url>  <url>
     <loc>http://blog.xiongchang.vip/thymeleaf%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E.html</loc>
     <lastmod>2019-11-11</lastmod>
